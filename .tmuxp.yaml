@@ -7,10 +7,12 @@ windows:
       panes:
           - shell_command:
               - source /env/bin/activate
-              - nvim ./app
+              - cd ./app
+              - nvim .
           - shell_command:
               - source /env/bin/activate
-              - nvim ./tests
+              - cd ./tests
+              - nvim .
           - shell_command:
               - source /env/bin/activate
               - ipython
